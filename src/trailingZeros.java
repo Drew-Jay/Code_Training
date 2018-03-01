@@ -1,4 +1,4 @@
-public class trailingZeros {
+public class TrailingZeros {
 
 	public long cnt_Zeros(long n) {
 		// write your code here, try to do it without arithmetic operators.
@@ -16,7 +16,7 @@ public class trailingZeros {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		trailingZeros tz = new trailingZeros();
+		TrailingZeros tz = new TrailingZeros();
 		int n = 11;
 		System.out.println(tz.cnt_Zeros(11));
 	}
