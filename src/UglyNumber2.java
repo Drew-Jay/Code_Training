@@ -7,8 +7,6 @@ public class UglyNumber2 {
 	 */
 
 	public int nthUglyNumber(int n) {
-		int cnt = 0;
-		int result = 1;
 		int m1 = 0;
 		int m2 = 0;
 		int m3 = 0;
@@ -31,13 +29,8 @@ public class UglyNumber2 {
 				m2++;
 			if (temp == temp3)
 				m3++;
-
 		}
 		
-		for(Integer item : arr){
-			System.out.println(item);
-		}
-
 		return arr.get(n - 1).intValue();
 	}
 
