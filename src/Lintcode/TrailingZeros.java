@@ -1,3 +1,4 @@
+package Lintcode;
 public class TrailingZeros {
 
 	public long cnt_Zeros(long n) {

@@ -1,3 +1,4 @@
+package Lintcode;
 
 public class CountNum {
 

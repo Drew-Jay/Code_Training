@@ -1,3 +1,4 @@
+package Lintcode;
 import java.util.ArrayList;
 
 public class UglyNumber {
