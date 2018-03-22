@@ -2,7 +2,7 @@ package nowcoder;
 
 import nowcoder.ListNode;
 
-public class FindKthToTail {
+public class L_FindKthToTail {
 
 	/**题目描述
 	 * 输入一个链表，输出该链表中倒数第k个结点
@@ -29,7 +29,7 @@ public class FindKthToTail {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		FindKthToTail FKTT = new FindKthToTail();
+		L_FindKthToTail FKTT = new L_FindKthToTail();
 		
 		ListNode a = new ListNode(1);
 		ListNode b = new ListNode(2);

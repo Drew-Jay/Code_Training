@@ -3,7 +3,7 @@ package nowcoder;
 import nowcoder.ListNode;
 import java.util.Stack;
 
-public class ReverseList {
+public class L_ReverseList {
 
 	/**
 	 * 题目描述
@@ -41,7 +41,7 @@ public class ReverseList {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ReverseList RL = new ReverseList();
+		L_ReverseList RL = new L_ReverseList();
 		ListNode a = new ListNode(1);
 		ListNode b = new ListNode(2);
 		ListNode c = new ListNode(3);

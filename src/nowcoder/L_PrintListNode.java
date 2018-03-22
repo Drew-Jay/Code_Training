@@ -3,7 +3,7 @@ package nowcoder;
 import java.util.ArrayList;
 import nowcoder.ListNode;
 
-public class PrintListNode {
+public class L_PrintListNode {
 	/**
 	 * 题目描述
 	 * 输入一个链表，从尾到头打印链表每个节点的值。

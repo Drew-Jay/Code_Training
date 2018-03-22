@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 import nowcoder.ListNode;
 
-public class MergeTwoListInOrder {
+public class L_MergeTwoListInOrder {
 
 	/**
 	 * 题目描述 输入两个单调递增的链表，输出两个链表合成后的链表，当然我们需要合成后的链表满足单调不减规则。
@@ -67,7 +67,7 @@ public class MergeTwoListInOrder {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		MergeTwoListInOrder MTLIO = new MergeTwoListInOrder();
+		L_MergeTwoListInOrder MTLIO = new L_MergeTwoListInOrder();
 		
 		ListNode a = new ListNode(1);
 		ListNode b = new ListNode(3);
