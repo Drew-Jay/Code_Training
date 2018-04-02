@@ -10,7 +10,7 @@ public class ReplaceStr {
 		str.insert(0, "*");
 		str.append("*");
 		for(int i=0 ; i<str.length() ; i++){
-			if(Character.isSpace(str.charAt(i))){
+			if(Character.isSpaceChar(str.charAt(i))){
 				str.deleteCharAt(i);
 				str.insert(i, "%20");
 			}
