@@ -6,9 +6,9 @@ import java.io.InputStreamReader;
 
 public class Main {
 
-	public int solution(int n, int k) {
-		int cnt = 0;
-		int x, y;
+	public long solution(long n, long k) {
+		long cnt = 0;
+		long x, y;
 		for (x = k; x<n; x++) {
 			cnt += n - x;
 		}
@@ -32,8 +32,8 @@ public class Main {
 		String str;
 		while ((str = scanner.readLine()) != null) {
 			String[] a = str.split(" ");
-			System.out.println(main.solution(Integer.parseInt(a[0]),
-					Integer.parseInt(a[1])));
+			System.out.println(main.solution(Long.parseLong(a[0]),
+					Long.parseLong(a[1])));
 		}
 	}
 }
