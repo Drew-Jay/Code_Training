@@ -91,6 +91,24 @@ public class T_AllOrder {
      */
     public void PostOrderWithouRecursion(TreeNode root){
         if(root == null)    return ;
+        Stack<TreeNode> stack = new Stack<>();
+        Stack<TreeNode> output = new Stack<>();
+        TreeNode p = root;
+        while(p != null || !stack.isEmpty()){
+           if(p != null){
+               stack.push(p);
+               output.push(p);
+               p = p.right;
+           }
+           else{
+               p = stack.pop();
+               p = p.left;
+           }
+        }
+
+        while(!output.isEmpty()){
+            System.out.print(output.pop().val + " ");
+        }
     }
 
     /**
@@ -140,14 +158,16 @@ public class T_AllOrder {
 //        ao.PreOrderWithoutRecursion(a);
 //        System.out.println();
 
-        ao.InOrder(a);
-        System.out.println();
-
-        ao.InOrderWithoutRecursion(a);
-        System.out.println();
+//        ao.InOrder(a);
+//        System.out.println();
+//
+//        ao.InOrderWithoutRecursion(a);
+//        System.out.println();
 
 //        ao.PostOrder(a);
 //        System.out.println();
+        ao.PostOrderWithouRecursion(a);
+        System.out.println();
 //
 //        ao.SeqOrder(a);
 //        System.out.println();
