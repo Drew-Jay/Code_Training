@@ -89,7 +89,7 @@ public class T_AllOrder {
      * 非递归后序遍历算法
      * @param root
      */
-    public void PostOrderWithouRecursion(TreeNode root){
+    public void PostOrderWithoutRecursion(TreeNode root){
         if(root == null)    return ;
         Stack<TreeNode> stack = new Stack<>();
         Stack<TreeNode> output = new Stack<>();
@@ -166,7 +166,7 @@ public class T_AllOrder {
 
 //        ao.PostOrder(a);
 //        System.out.println();
-        ao.PostOrderWithouRecursion(a);
+        ao.PostOrderWithoutRecursion(a);
         System.out.println();
 //
 //        ao.SeqOrder(a);
