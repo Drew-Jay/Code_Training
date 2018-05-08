@@ -12,7 +12,9 @@ package com.dj.Arithmetic;
 
 public class MaxSubArray {
     public int calcMaxArray(int[] a) {
-        int result = 0;
+        if(a.length ==0 || a == null ) return 0;
+
+        int result = a[0];
         int temp = 0;
         int start = 0;
         int end = 0;
@@ -21,27 +23,29 @@ public class MaxSubArray {
             if (temp >= 0)
                 temp += a[i];
             else {
-                temp = a[i];
-                start = i;
+                    temp = a[i];
+                    start = i;
             }
+
             if (temp >= result) {
                 result = temp;
                 end = i;
             }
         }
 
-        for (int i = start; i <=end ; i++) {
-            System.out.print(a[i] + " ");
-        }
-
-        System.out.println();
+//        for (int i = start; i <= end; i++) {
+//            System.out.print(a[i] + " ");
+//        }
+//
+//        System.out.println();
 
         return result;
     }
 
     public static void main(String[] args) {
         MaxSubArray main = new MaxSubArray();
-        int[] A = {1, -2, 3, 10, -4, 7, 2, 10, -5, 4};
+//        int[] A = {1, -2, 3, 10, -4, 7, 2, 10, -5, 4};
+        int[] A = {-1, -2};
 
         System.out.println(main.calcMaxArray(A));
     }
