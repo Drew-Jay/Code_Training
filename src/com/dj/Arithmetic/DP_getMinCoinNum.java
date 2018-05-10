@@ -7,9 +7,10 @@ public class DP_getMinCoinNum {
         for (int i = 1; i < total; i++) {
             for (int j = 0; j < coin.length; j++) {
                 if (i-coin[j]>=0 && dp[i-coin[j]]+1 < dp[i])
-                dp[i] =
+                dp[i] =dp[i-coin[j]]+1;
             }
         }
+        return 0;
     }
 
     public static void main(String[] args) {
